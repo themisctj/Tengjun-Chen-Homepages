@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#183b66">
   <meta name="description" content="Tengjun Chen is a Ph.D. candidate in Insurance at Shanghai University of Finance and Economics, researching agricultural insurance, climate risk, and non-life actuarial science.">
-  <title>Tengjun Chen | Insurance Economics</title>
+  <title>Tengjun Chen｜Insurance</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23183b66'/%3E%3Cpath d='M14 20h36v6H35v25h-6V26H14z' fill='white'/%3E%3Ccircle cx='47' cy='45' r='7' fill='%23d45a44'/%3E%3C/svg%3E">
   <style>
     :root {
@@ -429,10 +429,10 @@
       const buttons = document.querySelectorAll('[data-set-lang]');
       const blocks = document.querySelectorAll('[data-lang-block], [data-lang-inline]');
       const saved = localStorage.getItem('site-language');
-      const initial = saved || (navigator.language.toLowerCase().startsWith('zh') ? 'zh' : 'en');
+      const initial = saved === 'zh' ? 'zh' : 'en';
       const setLanguage = (lang) => {
         document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
-        document.title = lang === 'zh' ? '陈腾军｜保险经济学' : 'Tengjun Chen | Insurance Economics';
+        document.title = lang === 'zh' ? '陈腾军｜保险经济学' : 'Tengjun Chen｜Insurance';
         document.querySelector('meta[name="description"]').content = lang === 'zh'
           ? '陈腾军，上海财经大学保险学博士研究生，研究方向为农业保险、气候风险与非寿险精算。'
           : 'Tengjun Chen is a Ph.D. candidate in Insurance at Shanghai University of Finance and Economics, researching agricultural insurance, climate risk, and non-life actuarial science.';
